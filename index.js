@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('/api/getList', (req,res) => {
     var list = ["van", "truck", "bike"];
     res.json(list);
-    console.log('Sent list of Mangoes');
+    console.log('Sent list of items');
 });
 
 const port = process.env.PORT || 5000;
